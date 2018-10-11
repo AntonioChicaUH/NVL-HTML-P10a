@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pagina de ejemplo</title>
+	</head>
+	<body>
+		<form method="post" action="miservidor.php">
+			<div>
+				<label for="cp">Código postal:</label>
+				<input id="cp" type="number">
+			</div>
+			<div>
+				<label for="satisfaccion">Satisfacción:</label>
+				<input name="satisfaccion" type="radio" value="1">1
+				<input name="satisfaccion" type="radio" value="2">2
+				<input name="satisfaccion" type="radio" value="3">3
+				<input name="satisfaccion" type="radio" value="4">4
+				<input name="satisfaccion" type="radio" value="5">5
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input id="email" type="text">
+			</div>
+			<div>
+				<label for="puntosPositivosProducto">Puntos positivos del producto:</label>
+				<textarea id="puntosPositivosProducto"></textarea>
+			</div>
+			<div>
+				<label for="puntosNegativosProducto">Puntos negativos del producto:</label>
+				<textarea id="puntosNegativosProducto"></textarea>
+			</div>
+			<div>
+				<p>Valore las siguientes características</p>
+				<div>
+					<label for="calidad">Calidad:</label>
+					<select id=calidad>
+						<option value="excelente">Excelente</option>
+						<option value="bueno">Bueno</option>
+						<option value="regular">Regular</option>
+						<option value="pesimo">Pésimo</option>
+					</select>
+				</div>
+				<div>
+					<label for="precio">Precio:</label>
+					<input name="precio" type="radio" value="excelente">Excelente
+					<input name="precio" type="radio" value="bueno">Bueno
+					<input name="precio" type="radio" value="regular">Regular
+					<input name="precio" type="radio" value="pesimo">Pésimo
+				</div>
+			</div>
+			<input type=”submit” value=”Enviar”> 
+		</form>
+	</body>
+</html>
